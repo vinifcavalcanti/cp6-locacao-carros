@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { ArrowUpRight, Instagram, Mail, MapPin } from 'lucide-react'
+import { ArrowUpRight, AtSign, Mail, MapPin } from 'lucide-react'
 
 function Footer() {
 	return (
@@ -55,7 +55,7 @@ function Footer() {
 							</div>
 
 							<div className="flex items-center gap-3">
-								<Instagram size={17} />
+								<AtSign size={17} />
 								<span>Redes sociais em breve</span>
 							</div>
 						</div>
