@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 function CarCard({ carro }) {
 	return (
-		<article className="group overflow-hidden rounded-xl border border-white/10 bg-zinc-900">
+		<article className="group flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-900">
 			<div className="relative aspect-[16/10] overflow-hidden bg-zinc-800">
 				<img
 					src={carro.imagem}
@@ -17,7 +17,7 @@ function CarCard({ carro }) {
 				</span>
 			</div>
 
-			<div className="p-6">
+			<div className="flex flex-1 flex-col p-6">
 				<p className="mb-2 text-xs tracking-widest text-zinc-500 uppercase">
 					{carro.marca}
 				</p>
@@ -30,9 +30,9 @@ function CarCard({ carro }) {
 					{carro.descricao}
 				</p>
 
-				<div className="mt-6 flex items-center justify-between border-t border-white/10 pt-5">
+				<div className="mt-auto flex items-center justify-between border-t border-white/10 pt-5">
 					<span className="text-sm text-zinc-400">
-						Consulte disponibilidade
+						Explorar nossa frota
 					</span>
 
 					<Link
