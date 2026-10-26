@@ -1,19 +1,24 @@
+import { Routes, Route } from 'react-router'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Carros from './pages/Carros'
+
 function App() {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-950 text-white">
-      <h1 className="text-5xl font-bold">
-        Prestige Motors
-      </h1>
+	return (
+		<div className="flex min-h-screen flex-col bg-zinc-950">
+			<Navbar />
 
-      <p className="mt-4 text-zinc-400">
-        CP6 - Locação de Carros Importados
-      </p>
+			<div className="flex-1 pt-20">
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/carros" element={<Carros />} />
+				</Routes>
+			</div>
 
-      <button className="mt-8 rounded-lg bg-white px-6 py-3 font-semibold text-black hover:bg-zinc-300">
-        Explorar veículos
-      </button>
-    </div>
-  )
+			<Footer />
+		</div>
+	)
 }
 
 export default App
