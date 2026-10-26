@@ -121,6 +121,30 @@ function Home() {
 			>
         
         
+				<div className="mx-auto grid max-w-7xl items-end gap-10 lg:grid-cols-2">
+					<div>
+						<p className="mb-5 text-xs tracking-[0.25em] text-zinc-400 uppercase">
+							Sobre a Prestige Motors
+						</p>
+
+						<h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">
+							Mais do que dirigir.
+							<br />
+							<span className="text-zinc-500">
+								Viva a experiência.
+							</span>
+						</h2>
+					</div>
+
+					<p className="max-w-lg text-base leading-8 text-zinc-400">
+						A Prestige Motors é uma proposta de locadora
+						especializada em veículos importados. Nosso conceito
+						combina elegância, exclusividade e paixão pelo
+						universo automotivo.
+					</p>
+				</div>
+			</section>
+      
 <section className="border-t border-white/10 bg-zinc-950 px-6 py-20 lg:px-10">
 	<div className="mx-auto max-w-7xl">
 		<div className="mb-12">
@@ -176,29 +200,6 @@ function Home() {
 	</div>
 </section>
 
-				<div className="mx-auto grid max-w-7xl items-end gap-10 lg:grid-cols-2">
-					<div>
-						<p className="mb-5 text-xs tracking-[0.25em] text-zinc-400 uppercase">
-							Sobre a Prestige Motors
-						</p>
-
-						<h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">
-							Mais do que dirigir.
-							<br />
-							<span className="text-zinc-500">
-								Viva a experiência.
-							</span>
-						</h2>
-					</div>
-
-					<p className="max-w-lg text-base leading-8 text-zinc-400">
-						A Prestige Motors é uma proposta de locadora
-						especializada em veículos importados. Nosso conceito
-						combina elegância, exclusividade e paixão pelo
-						universo automotivo.
-					</p>
-				</div>
-			</section>
 		</main>
 	)
 }
