@@ -86,7 +86,7 @@ function Carros() {
 					</p>
 				</div>
 
-				<div className="mb-10 flex flex-wrap items-center gap-3">
+				<div role="group" aria-label="Filtrar veículos por categoria" className="mb-10 flex flex-wrap items-center gap-3">
 					<div className="mr-3 flex items-center gap-2 text-sm text-zinc-400">
 						<SlidersHorizontal size={18} />
 						<span>Filtrar:</span>
