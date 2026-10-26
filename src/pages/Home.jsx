@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import { ArrowRight, ArrowUpRight, ChevronDown } from 'lucide-react'
+import { ShieldCheck, Gem, Gauge } from 'lucide-react'
 import CarCard from '../components/CarCard'
 import { carros } from '../data/carros'
 
@@ -118,6 +119,63 @@ function Home() {
 				id="experiencia"
 				className="border-t border-white/10 bg-zinc-900 px-6 py-24 lg:px-10"
 			>
+        
+        
+<section className="border-t border-white/10 bg-zinc-950 px-6 py-20 lg:px-10">
+	<div className="mx-auto max-w-7xl">
+		<div className="mb-12">
+			<p className="mb-4 text-xs tracking-[0.25em] text-zinc-400 uppercase">
+				Nossos diferenciais
+			</p>
+
+			<h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+				Uma experiência além do comum.
+			</h2>
+		</div>
+
+		<div className="grid gap-6 md:grid-cols-3">
+			<div className="rounded-xl border border-white/10 bg-zinc-900 p-8">
+				<Gem className="mb-8 text-white" size={30} />
+
+				<h3 className="mb-4 text-xl font-semibold">
+					Seleção exclusiva
+				</h3>
+
+				<p className="text-sm leading-7 text-zinc-400">
+					Uma coleção de veículos importados escolhidos
+					para quem valoriza design e exclusividade.
+				</p>
+			</div>
+
+			<div className="rounded-xl border border-white/10 bg-zinc-900 p-8">
+				<Gauge className="mb-8 text-white" size={30} />
+
+				<h3 className="mb-4 text-xl font-semibold">
+					Alta performance
+				</h3>
+
+				<p className="text-sm leading-7 text-zinc-400">
+					Modelos que representam o melhor da engenharia
+					e do desempenho automotivo.
+				</p>
+			</div>
+
+			<div className="rounded-xl border border-white/10 bg-zinc-900 p-8">
+				<ShieldCheck className="mb-8 text-white" size={30} />
+
+				<h3 className="mb-4 text-xl font-semibold">
+					Experiência premium
+				</h3>
+
+				<p className="text-sm leading-7 text-zinc-400">
+					Um conceito de locação focado em qualidade,
+					conforto e atenção aos detalhes.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
 				<div className="mx-auto grid max-w-7xl items-end gap-10 lg:grid-cols-2">
 					<div>
 						<p className="mb-5 text-xs tracking-[0.25em] text-zinc-400 uppercase">
